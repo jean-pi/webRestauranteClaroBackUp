@@ -1,0 +1,22 @@
+
+    $blanco:#ffffff;
+    $blancoOpaco:#d4d4d4;
+    $negro:rgb(8, 8, 8);
+    $rojo:#c53030;
+    $verde:#83ad20;
+
+    $seaGreen:#3fc060;
+    $rappiColor:#EF7F66;
+    $pedidosYaColor:#eb2741;
+
+
+    @font-face {font-family:insaneBurguer ;
+    src: url(/assets/font/insaniburger.woff) format("woff");}
+    $insaneBurguer: insaneBurguer, sans-serif;
+
+    @font-face {font-family: retroSignature;
+    src: url(/assets/font/Breathing.ttf)}
+    $retroSignature: retroSignature;
+
+    $fontBase: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+

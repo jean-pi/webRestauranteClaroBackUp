@@ -1,0 +1,102 @@
+
+@use "../abstracts/variables";
+
+.sliderContainer{
+    &-slider{
+        overflow: hidden;
+        display: flex;
+        align-items: center;//
+        margin-left: -100vw;
+        &-rightBtn, &-leftBtn{//-->
+            cursor: pointer;
+            position: absolute;
+            width: 1.2rem;
+            height: 1.2rem;
+            transform: rotate(45deg);
+        }
+        &-rightBtn{
+            right: .7rem;
+            border-top: 1px solid rgb(221, 221, 221) ;
+            border-right: 1px solid  rgb(221, 221, 221) ;
+        }
+        &-leftBtn{
+            left: .7rem;
+            border-bottom: 1px solid  rgb(221, 221, 221) ;
+            border-left: 1px solid  rgb(221, 221, 221) ;
+        } 
+
+        &-deliveriAdUberEats{
+            background-color: variables.$seaGreen;
+        }
+        &-deliveriAdRappi{
+            background-color: #FF2B40;
+        }
+        &-deliveriAdPedidosYa{
+            background-color: #eb2741;
+        }
+        &-deliveriAd{
+            min-width: 100vw;
+            min-height: 7.5rem;
+            display: flex;
+            justify-content: center;
+            padding: .5rem 2.5rem .5rem 2rem;
+            @media (min-width:60rem) { // 1024px
+                padding: 0rem 2.4rem 0rem 2rem;
+                min-height: 3rem;
+            }
+            &-divImg{
+                display: flex;
+                align-items: center;
+                margin: 0 .5rem 0 .5rem;
+                &-img{
+                    border-radius: 7px;
+                    max-width: 5.5rem;
+                    display: block; // para eliminar ese estraño espacio debajo de las imagenes
+                    @media (min-width:60rem) { // 1024px
+                        max-width: 2.5rem;
+                    }
+                }
+    
+            }
+            &-text{
+                align-items: center;
+                display: flex;
+                &-textContainer{
+                    text-align: center;
+                    margin: 0 .3rem 0 .3rem ;
+                    &-a{
+                        text-decoration: none;
+                        &-pUberEats{
+                            color: variables.$negro;
+                        }
+                        &-pRappi{
+                            color: variables.$blanco;
+                        }
+                        &-pPedidosYa{
+                            color: variables.$blanco;
+                        }
+                        &-p{
+                            font-size: 1.2rem;
+                            font-family: insaneBurguer;
+                            @media (min-width:60rem) { // 1024px
+                                font-size: .9rem;
+                            }
+                            &-i{
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.deliveriAd2{
+    background-color: #FF2B40;
+    color: rgb(255, 255, 255);
+}
+.deliveriAd3{
+    background-color: #eb2741;
+    color: rgb(255, 255, 255);
+}

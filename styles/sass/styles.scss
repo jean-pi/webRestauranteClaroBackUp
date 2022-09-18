@@ -1,0 +1,20 @@
+
+
+// global Elements
+@use "./globalElements/header";
+@use "./globalElements/menuPanelMobile";
+@use "./globalElements/deliveriAd";
+@use "./globalElements/footer";
+@use "./globalElements/fastContactWhatsapp";
+@use "./globalElements/infoHeader";
+
+// menu virtual styles
+@use "./pageMenuVirtual/menuVirtual";
+@use "./pageMenuVirtual/calificacionGoogleMaps";
+
+// contacto
+@use  "./pageContacto/contacto";
+
+// inicio styles
+@use "./pageInicio/inicio.scss";
+

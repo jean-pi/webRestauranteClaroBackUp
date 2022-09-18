@@ -1,0 +1,92 @@
+@use "../abstracts/variables";
+
+.info{
+    padding: 0 1.5rem 0 1.5rem;
+    height: 1.3rem;
+    background-color: variables.$blanco;
+    border-bottom: 1px solid variables.$blancoOpaco;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (min-width   :0rem) { // 1024px
+        padding: 0 1rem 0 1rem;
+        // display: none;
+    }
+    &-textContainer{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        @media (min-width :30rem) { // 478px
+            justify-content: initial;
+            width:auto;
+        }
+        &-direction{
+            font-family: variables.$fontBase;
+            color: variables.$negro;
+            margin: 0 1.5rem 0 0;
+            font-size: .66rem;
+            display: none;
+            @media (min-width   :64rem) { // 1024px
+                display: initial;
+            }
+        }
+        &-celular{
+            font-family: variables.$fontBase;
+            color: variables.$negro;
+            // text-decoration: none;
+            font-size: .65rem;
+            margin: .05rem 1.5rem 0 0;
+            display: flex;
+            align-items: center;
+            transition: all .3;
+            &:hover{
+                color: variables.$rojo;
+            }
+            &-img{
+                max-width: .85rem;
+                margin: 0 .3rem 0 0;
+            }
+        }
+        &-email{
+            font-family: variables.$fontBase;
+            color: variables.$negro;
+            font-size: .66rem;
+            // text-decoration: none;
+            display: flex;
+            align-items: center;
+            transition: all .3s;
+            &:hover{
+                color: variables.$rojo;
+            }
+            &-img{
+                max-width: .90rem;
+                margin: 0 .3rem 0 0;
+            }
+        }
+    }
+
+    &-nav{
+        display: none;
+        @media (min-width :30rem) { // 478px
+            display: initial;
+        }
+        &-ul{
+            display: flex;
+            align-items: center;
+            list-style: none; 
+            &-li{
+                margin: 0 .3rem 0 .3rem;
+                max-width: .70rem;
+                max-height: 1.1rem;
+                    &:nth-child(3){
+                        max-width: .63rem;
+                    }
+                &-a{
+                    &-img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

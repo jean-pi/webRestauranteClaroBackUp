@@ -1,0 +1,99 @@
+
+@use "../abstracts/variables";
+.panelMenu{
+    position: fixed;
+    top: 0;
+    right: 0 ;
+    width: 0;
+    height: 100vh;
+    z-index: 1000;
+    background-color: variables.$blanco;
+    transition: box-shadow .10s linear;
+    transition: width .3s linear ,box-shadow .2s linear 0s;
+    box-shadow: -0px 0px 0px 50px #00000000;
+    &-iconCerrarContainer{
+        width: 100%;
+        height: 5rem;
+        &-iconCerrar{
+            margin: 1.5rem 1.5rem 1.5rem 14.2rem;
+            width: 1.3rem;
+            height: auto;
+        }
+    }
+    &-btnMenuDonwload{
+        display: block;
+        width: 15rem;
+        height: auto;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        padding: .8rem;
+        font-size: .85rem;
+        font-family: variables.$fontBase;
+        text-align: center;
+        margin: 0 1rem 1.5rem 1rem;
+        background-color: #a0d995;
+    }
+    &-link{
+        border-top: 1px solid rgb(240, 240, 240);
+        padding: 1rem 1.5rem;
+        &-a{
+            // text-align: center;
+            display: block;
+            // margin: auto;
+            width: 10rem;
+            font-size: 1.1rem;
+            font-weight: 100;
+            font-family:variables.$fontBase;
+            text-decoration: none;
+            color: variables.$negro;
+            font-weight: 500;
+        }
+    }
+    &-nav{
+        border-top: 1px solid rgb(240, 240, 240);
+        margin: auto;
+        padding: 1rem 0 0 0;
+        width: 17rem;
+        height: auto;
+        &-ul{
+            display: flex;
+            list-style: none; 
+            align-items: center;
+            justify-content: center;
+            &-li{
+                margin: 0rem .4rem 0rem .4rem;
+                height: auto;
+                &:nth-child(3){
+                    max-width: .84rem;
+                }
+                &:nth-child(1){
+                    max-width: .87rem;
+                }
+                &:nth-child(2){
+                    max-width: .84rem;
+                }
+                &:nth-child(4){
+                    max-width: .81rem;
+                }
+                &-a{
+                    &-img{
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+    &_isActive{
+        transition: width .3s linear ,box-shadow .2s linear .0s;
+        width: 17rem;
+        box-shadow: -200px 0px 300px 50px #00000041;
+    }
+    &_bodyIsActive{
+        overflow: hidden;
+    }
+}
+body{
+    overflow: initial;
+}
+
