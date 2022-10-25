@@ -21,11 +21,12 @@ var URLactual = window.location.href;
 
         if(URLactual === "http://127.0.0.1:5500/index.html" || 
             URLactual === "https://jean-pi.github.io/index.html" || 
-            URLactual === "https://jean-pi.github.io/"){
+            URLactual === "https://jean-pi.github.io/" ||
+            URLactual === "https://muestraweb.github.io/" || 
+            URLactual === "https://muestraweb.github.io/index.html"){
             $nodoDesktop1.classList.add(claseActive)
             cambiaStylesPanel($nodo1)
-            console.log("Aaa inicio")
-
+             
             document.addEventListener("click", (e)=>{
                 if(e.target.matches(idNodo3) || e.target.matches(idNodoDesktop3)){
                     //activo el nodo 3 
@@ -35,44 +36,42 @@ var URLactual = window.location.href;
                     //desabilito el nodo 1
                     $nodo1.style.color = "rgb(0, 0, 0)"
                     $nodoDesktop1.classList.remove(claseActive)
-
-                    if(window.innerWidth >= "768px"){
-                        document.querySelector("#panel").classList.toggle("panelMenu_isActive")
-                        document.documentElement.classList.toggle("panelMenu_bodyIsActive")
-                        // esta esta muy feo la verdad
-                    }
+                    
+                    document.querySelector("#panel").classList.remove("panelMenu_isActive")
+                    document.documentElement.classList.remove("panelMenu_bodyIsActive")
+                    console.log("qq")
                 }
             })
             
         } 
         if(URLactual === "http://127.0.0.1:5500/pages/menuvirtual.html" || 
-            URLactual === "https://jean-pi.github.io/pages/menuvirtual.html"){
+            URLactual === "https://jean-pi.github.io/pages/menuvirtual.html" || 
+            URLactual === "https://muestraweb.github.io/pages/menuvirtual.html"){
             $nodoDesktop2.classList.add(claseActive)
-            console.log("Aaa menuvirtual")
             cambiaStylesPanel($nodo2)
         }
         if(URLactual === "https://jean-pi.github.io//#quienessomos" || 
         URLactual === "https://jean-pi.github.io/index.html#quienessomos" ||
-        URLactual === "http://127.0.0.1:5500/index.html#quienessomos"){
+        URLactual === "http://127.0.0.1:5500/index.html#quienessomos" || 
+        URLactual === "https://muestraweb.github.io/index.html#quienessomos" ||
+        URLactual === "https://muestraweb.github.io//#quienessomos"){
         $nodoDesktop3.classList.add(claseActive)
         cambiaStylesPanel($nodo3)
-        console.log("aaa quienes somos")
+
         document.addEventListener("click", (e)=>{
-            if(e.target.matches(idNodo3) && window.innerWidth >= "768px" ){
-                document.querySelector("#panel").classList.toggle("panelMenu_isActive")
-                document.documentElement.classList.toggle("panelMenu_bodyIsActive")
-                // esta esta muy feo la verdad
+            if(e.target.matches(idNodo3) ){
+                document.querySelector("#panel").classList.remove("panelMenu_isActive")
+                document.documentElement.classList.remove("panelMenu_bodyIsActive")
+                // // esta esta muy feo la verdad
             }
         })
         
         }
         if(URLactual === "http://127.0.0.1:5500/pages/contacto.html" || 
-            URLactual === "https://jean-pi.github.io/pages/contacto.html"){
+            URLactual === "https://jean-pi.github.io/pages/contacto.html" || 
+            URLactual === "https://muestraweb.github.io/pages/contacto.html"){
             $nodoDesktop4.classList.add(claseActive)
             cambiaStylesPanel($nodo4)
             console.log("Aaa contacto")
         }
-
-
-
     }

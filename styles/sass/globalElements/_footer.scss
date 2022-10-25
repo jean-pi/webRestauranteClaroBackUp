@@ -40,6 +40,7 @@ body{
                 &-a{
                     font-size: .75rem;
                     text-decoration:  underline;
+                    white-space: nowrap;
                     color: variables.$blancoOpaco;
                     margin: .2rem 1rem;
                     font-family: variables.$fontBase;

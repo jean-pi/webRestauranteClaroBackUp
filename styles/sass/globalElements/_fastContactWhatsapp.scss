@@ -31,7 +31,8 @@
         color: rgba(0, 0, 0, 0);
         border: .1px solid rgba(228, 227, 227, 0);
         visibility: hidden;
-
+        word-wrap: break-word;
+        
         animation-duration: 7s;
         animation-delay:4s;
         animation-name: fastContact;
@@ -59,38 +60,5 @@
                 display: none;    
             }
         }  
-        // &-ajam{
-        //     position: absolute;
-        //     color: black;
-        //     width: .45rem;
-        //     height: .45rem;
-        //     right: -.2rem;
-        //     top: .61rem;
-        //     // top: 5rem;
-        //     transform: rotate(45deg);
-        //     background-color: rgba(255, 255, 255, 0);
-            
-        //     animation-duration: 10s;
-        //     animation-delay:2s;
-        //     animation-name: fastContact;
-        //     @keyframes fastContact {
-        //         from {
-        //             background-color: rgba(255, 255, 255, 0);
-        //             color: rgba(0, 0, 0, 0);
-        //         }
-        //         15%{
-        //             background-color: rgb(255, 255, 255);
-        //             color: rgb(0, 0, 0);
-        //         }
-        //         85%{
-        //             background-color: rgb(255, 255, 255);
-        //             color: rgb(0, 0, 0);
-        //         }
-        //         to {
-        //             background-color: rgba(255, 255, 255, 0);
-        //             color: rgba(0, 0, 0, 0);        
-        //         }
-        //     }  
-        // }
     }
 }

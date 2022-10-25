@@ -5,7 +5,7 @@ export function menuHamburguer(idOpenCLose,idPanel,clasePanelIsActive){
 
         document.addEventListener("click", (e)=>{
             if(e.target.matches(idOpenCLose)){
-                manejadorPanelLateral()
+                manejadorPanelLateral();
             }
         })
 

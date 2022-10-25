@@ -8,7 +8,7 @@
     min-width: 340px;
     max-width: 700px;
     background-color: variables.$blanco;
-    padding: 2rem 1rem;
+    padding: 0rem 1rem;
     margin: auto;
     &-img{
         width: 100%;
@@ -17,6 +17,7 @@
         background-color:rgb(243, 243, 243);
         font-family: variables.$fontBase;
         padding: 1.5rem;
+        margin-top: -5px;
         text-align: center;
         font-size: 1.3rem;
         color: #a0d995;
@@ -26,76 +27,69 @@
     }
 }
 
-
-
-.menuDigitalContent{
-    @media (min-width:75em) { // 1200px
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto auto auto;
-        margin: 1rem 6rem;
-    }
-}
-
-.menu{
-    margin: 2rem 1rem ;
-    &-h3{
-        // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-family:insaneBurguer , sans-serif;
-        font-weight: 100;
-        margin: 2rem 0 1rem 0;
-        font-size: 1.5rem;
-        text-align: center;
-        // color: rgb(206, 59, 33);
-        
-    }
-    &-grid{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto auto auto;
-        @media (min-width:48em) { // 768px
-            grid-template-columns: 33.3% 33.3% 33.3%;
-            grid-template-rows: auto auto auto;
-        }
-        &-iten{
-            // -webkit-box-shadow: 0px 0px 12px -2px rgba(186,186,186,1);
-            // -moz-box-shadow: 0px 0px 12px -2px rgba(186,186,186,1);
-            // box-shadow: 0px 0px 12px -2px rgba(186,186,186,1);
-            -webkit-box-shadow: 0px 0px 13px -4px rgba(232,232,232,1);
-            -moz-box-shadow: 0px 0px 13px -4px rgba(232,232,232,1);
-            box-shadow: 0px 0px 13px -4px rgba(232,232,232,1);
-            margin: .6rem .5rem;
-            padding-bottom: .5rem;
-            &-img{
-                max-width: 100%;
-                height: 70%;
-                object-fit: cover;
-            }
-            &-h4{
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                margin: .3rem 0 .3rem .6rem;
-            }
-            &-p{
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                margin: .3rem 0 .3rem .6rem;
-            }
-        }
-    }
-    &-inline{
-        margin: .7rem .5rem;
-        padding: .3rem;
-        // -webkit-box-shadow: 0px 0px 12px -2px rgba(186,186,186,1);
-        // -moz-box-shadow: 0px 0px 12px -2px rgba(186,186,186,1);
-        // box-shadow: 0px 0px 12px -2px rgba(186,186,186,1);
-        -webkit-box-shadow: 0px 0px 13px -4px rgba(232,232,232,1);
-        -moz-box-shadow: 0px 0px 13px -4px rgba(232,232,232,1);
-        box-shadow: 0px 0px 13px -4px rgba(232,232,232,1);
-        &-h4{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: .3rem 0;
+.deliveriAction{
+    border: 1px solid rgb(232, 232, 232);
+    min-width: 340px;
+    max-width: 700px;
+    height: auto;
+    margin: 2rem 1rem;
+    border-radius: 16px;
+    &-cabecera{
+        background-color: rgb(232, 232, 232);
+        height: 2.9rem;
+        border-radius: 16px 16px 0 0;
+        display: flex;
+        align-items: center;
+        padding: 0 .9rem;
+        &-img{
+            width: 6.5rem;
+            position: relative;
+            margin-right: .6rem;
+            // top: -2rem;
+            // left: .8rem;
         }
         &-p{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: variables.$fontBase;
+            font-size: 1rem;
+            color: rgba(0, 0, 0, 0.736);
+            margin-top: .2rem;
+            &::before{
+                content: "|";
+                margin-right: .6rem;
+                position: relative;
+                top: -.1rem;
+                height: 1rem;
+                width: .09rem;
+            }
+        }
+    }
+    &-cuerpo{
+        padding: 1rem;
+        &-h6{
+            font-family: variables.$fontBase;
+            font-size: .96rem;
+            color: rgba(0, 0, 0, 0.736);
+            margin: 0 0 .7rem .1rem;
+            font-weight: 500;
+        }
+        &-button{
+            font-family: variables.$fontBase;
+            text-decoration: none;
+            padding: .2rem .7rem .4rem .7rem;
+            display: inline-block;
+            border-radius: 24px;
+            font-weight: 700;
+        }
+        &-buttonWhatsApp{
+            color:#3fc060 ;
+            border: 2px solid  #3fc060;
+        }
+        &-buttonPedidosYa{
+            color:#EF7F66;
+            border: 2px solid  #EF7F66;
         }
     }
 }
+
+
+
