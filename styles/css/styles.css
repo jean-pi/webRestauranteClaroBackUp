@@ -596,7 +596,7 @@ html {
   min-width: 340px;
   max-width: 700px;
   background-color: #ffffff;
-  padding: 0rem 1rem;
+  padding: 2rem 1rem;
   margin: auto;
 }
 .menuImagenes-img {
@@ -617,11 +617,16 @@ html {
 
 .deliveriAction {
   border: 1px solid rgb(232, 232, 232);
-  min-width: 340px;
-  max-width: 700px;
+  min-width: 310px;
+  max-width: 660px;
   height: auto;
   margin: 2rem 1rem;
   border-radius: 16px;
+}
+@media (min-width: 48rem) {
+  .deliveriAction {
+    margin: 2rem auto;
+  }
 }
 .deliveriAction-cabecera {
   background-color: rgb(232, 232, 232);
@@ -655,26 +660,27 @@ html {
 }
 .deliveriAction-cuerpo-h6 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 0.96rem;
-  color: rgba(0, 0, 0, 0.736);
+  font-size: 0.83rem;
+  color: rgba(0, 0, 0, 0.733);
   margin: 0 0 0.7rem 0.1rem;
   font-weight: 500;
 }
 .deliveriAction-cuerpo-button {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-decoration: none;
-  padding: 0.2rem 0.7rem 0.4rem 0.7rem;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.6rem;
   display: inline-block;
-  border-radius: 24px;
-  font-weight: 700;
+  border-radius: 23px;
+  font-weight: 600;
 }
 .deliveriAction-cuerpo-buttonWhatsApp {
   color: #3fc060;
-  border: 2px solid #3fc060;
+  border: 1px solid #3fc060;
 }
 .deliveriAction-cuerpo-buttonPedidosYa {
   color: #EF7F66;
-  border: 2px solid #EF7F66;
+  border: 1px solid #EF7F66;
 }
 
 .calificacionMaps {
