@@ -596,7 +596,7 @@ html {
   min-width: 340px;
   max-width: 700px;
   background-color: #ffffff;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 0rem 1rem;
   margin: auto;
 }
 .menuImagenes-img {
@@ -621,7 +621,7 @@ html {
   max-width: 660px;
   height: auto;
   margin: 2rem 1rem;
-  border-radius: 16px;
+  border-radius: 8px;
 }
 @media (min-width: 48rem) {
   .deliveriAction {
@@ -631,7 +631,7 @@ html {
 .deliveriAction-cabecera {
   background-color: rgb(232, 232, 232);
   height: 2.9rem;
-  border-radius: 16px 16px 0 0;
+  border-radius: 8px 8px 0 0;
   display: flex;
   align-items: center;
   padding: 0 0.9rem;
